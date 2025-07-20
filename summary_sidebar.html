@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>COO.exe — The Pigeon Archive</title>
+  <style>
+    @font-face {
+        font-family: 'UniFont';
+        src: url('fonts/unifont-15.0.01.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body {
+  margin-left: 180px;
+      background-color: #000;
+      color: #fff;
+      font-family: 'UniFont', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      padding: 1em;
+      text-align: center;
+      font-weight: normal;
+      font-size: 1.8em;
+      line-height: 1.4em;
+    }
+    h2 {
+      padding: 1em 2em 0 2em;
+      font-weight: normal;
+      font-size: 1.2em;
+      border-top: 1px solid #333;
+      margin-top: 2em;
+    }
+    .entry {
+      width: 100%;
+      padding: 2em;
+      box-sizing: border-box;
+    }
+    video {
+      width: 65%;
+      height: auto;
+      border: none;
+      display: block;
+      margin: 0 auto;
+    }
+    .doc-link {
+      margin-top: 0.8em;
+      display: inline-block;
+      color: white;
+      border: 1px solid white;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+    .doc-link:hover {
+      background-color: white;
+      color: black;
+    }
+    
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 100vh;
+  background-color: #000;
+  border-left: 1px solid #333;
+  padding: 250px 1em 1em 1em;
+  box-sizing: border-box;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 6px 12px;
+  font-size: 0.85em;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* removed top nav #nav */
+#nav { display: none;
+      position: sticky;
+      top: 0;
+      background: black;
+      padding: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+      z-index: 10;
+      border-bottom: 1px solid #333;
+    }
+    a.nav-link {
+      color: white;
+      text-decoration: none;
+      border: 1px solid white;
+      padding: 6px 12px;
+      font-size: 0.9em;
+    }
+    a.nav-link:hover {
+      background-color: white;
+      color: black;
+    }
+    .intro {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: left;
+      padding: 0 1em 2em;
+      color: #ccc;
+      font-size: 0.95em;
+      line-height: 1.4em;
+      text-wrap: pretty;
+    }
+  </style>
+</head>
+<body>
+
+<h1>COO.exe<br><span style="font-size: 0.8em; font-weight: normal;">The Pigeon Archive: Exhibition Summary</span></h1>
+
+<div class="intro">
+  This site is a post-exhibition reflection of <em>COO.exe</em>, a pigeon surveillance system disguised as a bird archive.  
+  What began with coos and breadcrumbs unfolded into a loop of observation, decoding, and quiet submission. Here, you can revisit the video chapters and the documents once printed from the archive.  
+  Click a title to re-enter that segment and view the associated printed material below each video.
+</div>
+
+<div id="sidebar">
+  <a href="#start" class="nav-link">Start</a>
+  <a href="#diary01" class="nav-link">Diary 01</a>
+  <a href="#observer" class="nav-link">Observer Interaction</a>
+  <a href="#identity" class="nav-link">Identity</a>
+  <a href="#diary02" class="nav-link">Diary 02</a>
+  <a href="#cyborg" class="nav-link">Cyborg</a>
+  <a href="#error" class="nav-link">Error</a>
+  <a href="#reboot" class="nav-link">Reboot</a>
+  <a href="#diary03" class="nav-link">Diary 03</a>
+  <a href="#last" class="nav-link">Last Words</a>
+  <a href="#archive" class="nav-link">Archived</a>
+  <a href="#end" class="nav-link">End</a>
+</div>
+
+<h2 id="start">Start</h2>
+<div class="entry"><video controls src="videos/vid-1.mp4"></video></div>
+
+<h2 id="diary01">a01 - Diary 01</h2>
+<div class="entry"><video controls src="videos/vid-2.mp4"></video></div>
+<div class="entry">
+  <video controls src="videos/vid-3.mp4"></video>
+  <a class="doc-link" href="pdfs/a01_diary_01.pdf" target="_blank">View a01_diary_01.pdf</a>
+</div>
+
+<h2 id="observer">A Fun Interaction with the Observer</h2>
+<div class="entry"><video controls src="videos/vid-4.mp4"></video></div>
+<div class="entry">
+  <video controls src="videos/vid-5.mp4"></video>
+  <a class="doc-link" href="pdfs/response_note.pdf" target="_blank">View response_note.pdf</a>
+</div>
+
+<h2 id="identity">b01 - Identity</h2>
+<div class="entry"><video controls src="videos/vid-6.mp4"></video></div>
+<div class="entry">
+  <video controls src="videos/vid-7.mp4"></video>
+  <a class="doc-link" href="pdfs/b01_identity.pdf" target="_blank">View b01_identity.pdf</a>
+</div>
+
+<h2 id="diary02">a01 - Diary 02</h2>
+<div class="entry"><video controls src="videos/vid-8.mp4"></video></div>
+<div class="entry">
+  <video controls src="videos/vid-9.mp4"></video>
+  <a class="doc-link" href="pdfs/a02_diary_02.pdf" target="_blank">View a02_diary_02.pdf</a>
+</div>
+
+<h2 id="cyborg">b02 - Cyborg</h2>
+<div class="entry"><video controls src="videos/vid-10.mp4"></video></div>
+<div class="entry">
+  <video controls src="videos/vid-11.mp4"></video>
+  <a class="doc-link" href="pdfs/b02_cyborg.pdf" target="_blank">View b02_cyborg.pdf</a>
+</div>
+
+<h2 id="error">Error</h2>
+<div class="entry"><video controls src="videos/vid-12.mp4"></video></div>
+<div class="entry">
+  <video controls src="videos/vid-13.mp4"></video>
+  <a class="doc-link" href="pdfs/error_glitch.pdf" target="_blank">View error_glitch.pdf</a>
+</div>
+
+<h2 id="reboot">System Reboot</h2>
+<div class="entry"><video controls src="videos/vid-14.mp4"></video></div>
+
+<h2 id="diary03">a03 - Diary 03</h2>
+<div class="entry">
+  <video controls src="videos/vid-15.mp4"></video>
+  <a class="doc-link" href="pdfs/a03_diary_03.pdf" target="_blank">View a03_diary_03.pdf</a>
+</div>
+
+<h2 id="last">The Pigeon's Last Words</h2>
+<div class="entry"><video controls src="videos/vid-16.mp4"></video></div>
+
+<h2 id="archive">You have been Archived</h2>
+<div class="entry">
+  <video controls src="videos/vid-17.mp4"></video>
+  <a class="doc-link" href="pdfs/you_have_been_archived.pdf" target="_blank">View you_have_been_archived.pdf</a>
+</div>
+
+<h2 id="end">End</h2>
+<div class="entry"><video controls src="videos/vid-18.mp4"></video></div>
+
+</body>
+</html>
